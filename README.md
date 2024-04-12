@@ -1,7 +1,7 @@
 # PDFDecoderAIP
 
 ## Resumen
-PDFDecoderAIP es un proyecto diseñado para automatizar la comparación entre dos documentos del AIP España, centrándose específicamente en cartas y procedimientos aplicables a LEBL.
+PDFDecoderAIP es un proyecto diseñado para automatizar la comparación entre dos documentos del AIP España, centrándose específicamente en cartas y procedimientos aplicables a LEBL. (https://aip.enaire.es/AIP/#LEBL)
 
 El proceso se basa en dos verticales principales:
 
