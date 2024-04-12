@@ -6,10 +6,9 @@ PDFDecoderAIP es un proyecto diseñado para automatizar la comparación entre do
 El proceso se basa en dos verticales principales:
 
 1. **Scraping de tablas:** Utilizando técnicas de scraping, el programa extrae datos tabulares relevantes de los documentos.
-2. ![Texto alternativo](url_de_la_imagen)
-3. 
-4. **Comparación de imágenes:** Comparando visualmente las imágenes de los documentos para identificar diferencias.
-5. ![Texto alternativo](url_de_la_imagen)
+[Texto alternativo](url_de_la_imagen)
+
+2. **Comparación de imágenes:** Comparando visualmente las imágenes de los documentos para identificar diferencias. ![Texto alternativo](url_de_la_imagen)
 
 ## Instalación
 Para utilizar PDFDecoderAIP, asegúrate de tener instaladas las siguientes bibliotecas de Python:
