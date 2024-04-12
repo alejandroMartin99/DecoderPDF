@@ -22,7 +22,8 @@ pip install PyMuPDF
 ## Uso
 1. Clona este repositorio en tu máquina local.
 2. Instala las dependencias mencionadas anteriormente.
-3. Ejecuta el script principal.
+3. Se deben almacenar los dos PDFs a comparar en la carpeta Compare_2_PDFs.
+4. Ejecuta el script principal.
 
 ## Estructura del Proyecto
 
