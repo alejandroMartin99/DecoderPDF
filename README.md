@@ -17,20 +17,13 @@ pip install PyPDF2==2.12.1
 pip install PyMuPDF
 ```
 
-
 ## Uso
 1. Clona este repositorio en tu máquina local.
 2. Instala las dependencias mencionadas anteriormente.
 3. Ejecuta el script principal.
 
-## Contribución
-Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, sigue estos pasos:
+## Estructura del Proyecto
 
-1. Haz un fork del proyecto.
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Agrega nueva característica'`).
-4. Sube tus cambios (`git push origin feature/nueva-caracteristica`).
-5. Abre una solicitud de extracción.
 
 ## Licencia
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
+
