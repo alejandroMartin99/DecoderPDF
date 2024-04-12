@@ -10,8 +10,9 @@ El proceso se basa en dos verticales principales:
 
 ## Instalación
 Para utilizar PDFDecoderAIP, asegúrate de tener instaladas las siguientes bibliotecas de Python:
+```bash
 pip install pandas
-pip install camelot-py[cv]   
+pip install camelot-py[cv]
 pip install PyPDF2==2.12.1
 pip install PyMuPDF
 
