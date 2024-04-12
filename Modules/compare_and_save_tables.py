@@ -7,9 +7,6 @@ def compare_and_save_tables(tables):
 
     combined_tables = [pd.concat(df_list, axis=1) for df_list in tables]
     combined_tables = pd.concat(combined_tables, axis=1)
-
-    print(combined_tables)
-    
     combined_tables.columns = [f'{col}_X' if i < len(combined_tables.columns)//2 else f'{col}_Y' for i, col in enumerate(combined_tables.columns)]
     
     exclude_columns = ['Name_PDF']
