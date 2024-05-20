@@ -1,7 +1,4 @@
-import os
-import camelot
 import pandas as pd
-import fitz 
 
 def compare_and_save_tables(tables):
 

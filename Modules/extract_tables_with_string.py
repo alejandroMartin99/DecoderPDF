@@ -1,7 +1,7 @@
 import os
 import camelot
 import pandas as pd
-import fitz 
+
 
 
 def extract_tables_with_string(pdf_path, string, index_offset=0, header_change=False, column_names=None):
@@ -24,16 +24,10 @@ def extract_tables_with_string(pdf_path, string, index_offset=0, header_change=F
 
     for table in tables:
 
-        # print(table.df.head(4))
-        
         if any(string in cell for row in table.data for cell in row):
 
-            # print(f'\nTabla en bruto')
-            # print(table.df.head(15))
             table.df = table.df[~table.df.apply(lambda row: any('BARCELONA/Josep' in str(cell) for cell in row), axis=1)]
             table.df = table.df.iloc[index_offset:].reset_index(drop=True)
-            # print(f'\nTabla con reseteo de idx y cabecera')
-            # print(table.df.head(5))
 
             if header_change:
                 table.df.columns = table.df.iloc[0]
@@ -48,14 +42,7 @@ def extract_tables_with_string(pdf_path, string, index_offset=0, header_change=F
                 table.df = table.df.loc[:, ~columns_to_drop]
                 table.df.columns = column_names
 
-                # print(f'\nTabla con PROCEDIMIENTO tras procesado')
-                # print(table.df.head(5))
-
             table.df.insert(0, 'Name_PDF', pdf_name)
             tables_with_string.append(table.df)
-
-            
-
-
 
     return tables_with_string
