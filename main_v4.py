@@ -8,6 +8,8 @@ from Modules.compare_and_save_tables      import compare_and_save_tables
 from Modules.generate_difference_image    import generate_difference_image
 from Modules.save_format_frontend         import save_format_frontend
 
+os.system('cls')
+
 # Carpeta donde se encuentran los PDFs
 pdf_folder = 'Compare_2_PDFs'
 pdf_files = [os.path.join(pdf_folder, f) for f in os.listdir(pdf_folder) if f.endswith('.pdf')]
@@ -15,7 +17,7 @@ pdf_files = [os.path.join(pdf_folder, f) for f in os.listdir(pdf_folder) if f.en
 tables_coordinates = []
 tables_description = []
 
-print(f'\nSe inicia la comparación de tablas:')
+print(f'Se inicia la comparación de tablas:')
 
 for pdf_file in pdf_files:
     print(f'Extrayendo tablas de {pdf_file} ...')
@@ -71,7 +73,7 @@ save_format_frontend(
         'DescripcionTabular',
         ]
 )
-print(f'\nSe ha generado correctamente el fichero excel donde se recogen los cambios. \u2713')
+print(f'Se ha generado correctamente el fichero excel donde se recogen los cambios. \u2713')
 
 print(f'\nSe inicia la comparación de imágenes:\nLista de PDF:')
 for i in range(len(pdf_files)-1):

@@ -3,7 +3,6 @@ import camelot
 import pandas as pd
 
 
-
 def extract_tables_with_string(pdf_path, string, index_offset=0, header_change=False, column_names=None):
     """
     Extract tables from PDF containing a specific string and perform operations on them.
