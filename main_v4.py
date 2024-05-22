@@ -10,7 +10,6 @@ from Modules.save_format_frontend         import save_format_frontend
 
 os.system('cls')
 
-# Carpeta donde se encuentran los PDFs
 pdf_folder = 'Compare_2_PDFs'
 pdf_files = [os.path.join(pdf_folder, f) for f in os.listdir(pdf_folder) if f.endswith('.pdf')]
 
